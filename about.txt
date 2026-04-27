@@ -1,0 +1,4 @@
+My name is [Dhafer].
+My field is [control & instrumentation Engineering].
+My favorite programming language is [SQL].
+I want to learn Git and GitHub to manage code and projects.
