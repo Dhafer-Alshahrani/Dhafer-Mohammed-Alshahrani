@@ -1,0 +1,47 @@
+// Step 1: Registration
+BEGIN Registration
+    INPUT name, email, phone, password 
+    VALIDATE data 
+    SEND verification code via email/SMS 
+    ACTIVATE account 
+END Registration
+
+// Step 2: Login
+BEGIN Login
+    INPUT email, password 
+    IF credentials are correct THEN
+        REDIRECT to personal dashboard 
+    ELSE
+        DISPLAY error message and recovery option 
+    END IF
+END Login
+
+// Step 3: Booking
+BEGIN Exam_Booking
+    BROWSE available exams [cite: 13]
+    VIEW details (fees, dates, locations) [cite: 14]
+    SELECT exam and proceed to payment 
+    PROCESS payment of full fee 
+    CHOOSE preferred date and location [cite: 20]
+    SEND booking confirmation 
+END Exam_Booking
+
+// Step 4: Taking the Exam & Results
+BEGIN Take_Exam
+    STUDENT attends at scheduled time [cite: 23, 24]
+    SYSTEM records result 
+    
+    IF score is "Pass" THEN
+        DISPLAY "You have passed" [cite: 29, 31]
+    ELSE IF FAIL (1st attempt) THEN
+        PAY 50% for retake 
+        IF still fail THEN show Xmind [cite: 36]
+    ELSE IF FAIL (2nd attempt) THEN
+        PAY 25% for retake 
+    ELSE IF FAIL (3rd attempt) THEN
+        PAY 100% and WAIT 1 month 
+        IF still fail THEN
+            STUDENT must take the course again [cite: 44]
+        END IF
+    END IF
+END Take_Exam
