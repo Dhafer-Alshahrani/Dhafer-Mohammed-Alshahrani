@@ -1,0 +1,157 @@
+============================================================
+        HTML & CSS MULTI-PAGE WEBSITE HOMEWORK
+============================================================
+Course: Foundation Bootcamp – Programming Track
+Tool: Visual Studio Code (VS Code)
+
+Objective:
+Practice:
+- HTML basic tags
+- Links between pages
+- Images, Lists, Tables
+- Forms (all elements)
+- CSS (Classes, IDs, External CSS)
+
+Submission:
+- Each student already has a GitHub repo (their name)
+- Create a folder inside it named:
+
+html-css-hw
+
+- Add all files inside this folder
+- Push to GitHub and share the repo link
+
+============================================================
+TASK 1: CREATE PROJECT STRUCTURE
+============================================================
+
+Inside your existing repository:
+
+Create folder:
+html-css-hw
+
+Create the following files:
+- index.html
+- about.html
+- contact.html
+- table.html
+- style.css
+
+------------------------------------------------------------
+
+============================================================
+TASK 2: HOME PAGE (index.html)
+============================================================
+
+Content:
+
+- Title: Student Website
+- Main heading: Your Name<
+- Paragraph about yourself
+- Profile image
+- Navigation links:
+  - index
+  - About
+  - Table
+  - Contact
+
+Use:
+h1, p, img, a, div
+
+------------------------------------------------------------
+
+============================================================
+TASK 3: ABOUT PAGE (about.html)
+============================================================
+
+Content:
+
+- Heading: About Me
+- Paragraph (your background)
+- Skills list (unordered list)
+- Daily tasks (ordered list)
+
+Use:
+h1, p, ul, ol, li
+
+------------------------------------------------------------
+
+============================================================
+TASK 4: TABLE PAGE (table.html)
+============================================================
+
+Content:
+
+- Heading: My Schedule
+- Table with:
+  Course | Day | Time
+- At least 3 rows
+
+Use:
+table, tr, th, td
+
+- Navigation links:
+  - index
+  - About
+  - Table
+  - Contact
+
+------------------------------------------------------------
+
+============================================================
+TASK 5: CONTACT PAGE (contact.html)
+============================================================
+
+Content (FORM):
+
+- Name (text)
+- Email (email)
+- Password
+- Gender (radio)
+- Skills (checkbox)
+- Country (select dropdown)
+- datalist (City)
+- Message (textarea)
+- Submit button
+- Reset button
+
+Use:
+form, input, textarea, select, option, button, datalist
+
+------------------------------------------------------------
+
+============================================================
+CSS REQUIREMENTS
+============================================================
+
+- Use external CSS (style.css)
+- Use at least:
+  - 2 Classes
+  - 1 ID
+
+Apply:
+- background color
+- margin
+- padding
+- text color
+
+- Navigation links:
+  - index
+  - About
+  - Table
+  - Contact
+
+Link CSS in all pages
+
+============================================================
+IMPORTANT NOTES
+============================================================
+
+- All pages must be linked together
+- Use navigation menu in each page
+- Use classes and IDs correctly
+- Push all files to GitHub
+
+============================================================
+GOOD LUCK 🚀
+============================================================
