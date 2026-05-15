@@ -1,0 +1,95 @@
+Problem 1: Letter Grade Calculator
+----------------------------------
+Ask the user for a score from 0 to 100 and print the letter grade:
+  - 90 to 100  -> A
+  - 80 to 89   -> B
+  - 70 to 79   -> C
+  - 60 to 69   -> D
+  - below 60   -> F
+Constraint: Do NOT use 'and'. Use the natural order of elif to
+handle the ranges.
+
+
+Problem 2: Leap Year Checker
+----------------------------
+A year is a leap year if:
+  - It is divisible by 4, AND
+  - It is NOT divisible by 100, UNLESS it is divisible by 400.
+Ask the user for a year and print "Leap Year" or "Not a Leap Year".
+Constraint: You may NOT use 'and' or 'or'. Use nested if statements.
+
+
+Problem 3: Triangle Type
+------------------------
+Ask the user for the three sides of a triangle (a, b, c). Print:
+  - "Equilateral" if all three sides are equal.
+  - "Isosceles"   if exactly two sides are equal.
+  - "Scalene"     if no sides are equal.
+Constraint: NO logical operators. Use nested if-else.
+
+
+Problem 4: Number Sign and Magnitude
+------------------------------------
+Ask the user for a number and print:
+  - "Negative large"  if the number is less than -100
+  - "Negative small"  if the number is between -100 and 0 (not 0)
+  - "Zero"            if the number is exactly 0
+  - "Positive small"  if the number is between 0 and 100 (not 0)
+  - "Positive large"  if the number is greater than 100
+Constraint: NO logical operators. Use ordered elif branches.
+
+
+Problem 5: Ticket Price Calculator
+-----------------------------------
+A cinema charges tickets based on age and day:
+  - Age below 12         -> 20 SAR
+  - Age 12 to 17         -> 35 SAR
+  - Age 18 to 59         -> 50 SAR
+  - Age 60 or above      -> 25 SAR
+Additionally, on "Tuesday", every ticket gets a 10 SAR discount
+(minimum price must not go below 10 SAR).
+Ask the user for age and day, then print the final ticket price.
+Constraint: NO logical operators. Use nested conditions.
+
+
+
+
+Problem 6: Rock, Paper, Scissors
+--------------------------------
+Ask two players to enter their choice: "rock", "paper", or
+"scissors". Print the result:
+  - "Tie"            if both chose the same
+  - "Player 1 wins"  if Player 1 beats Player 2
+  - "Player 2 wins"  otherwise
+ 
+Game rules:
+  - rock      beats  scissors
+  - scissors  beats  paper
+  - paper     beats  rock
+ 
+Constraint: NO logical operators. Use if-elif-else with nested
+if-else inside each branch.
+
+
+
+
+
+
+Problem 7: Loan Eligibility
+---------------------------
+A bank decides on a loan based on three factors:
+  - Age must be between 21 and 65 (inclusive).
+  - The applicant must have a job (answer "yes" or "no").
+  - Monthly income (in SAR) determines the result:
+       income >= 5000          -> "Approved"
+       income between 3000 and 4999 -> "Approved with conditions"
+       income below 3000       -> "Rejected: low income"
+
+If age is outside 21–65            -> "Rejected: age not eligible"
+If applicant has no job             -> "Rejected: no job"
+
+Ask the user for age, income, and job status, then print the
+result.
+
+Use logical operators for the age range, and nested if statements
+for the job check and income tiers.
