@@ -1,0 +1,83 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 HelveticaNeue;\f2\fnil\fcharset0 LucidaGrande;
+}
+{\colortbl;\red255\green255\blue255;\red221\green221\blue224;\red20\green20\blue23;\red0\green0\blue0;
+\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c89412\c89412\c90196;\cssrgb\c10196\c10196\c11765;\cssrgb\c0\c0\c0;
+\cssrgb\c100000\c100000\c100000\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww33700\viewh18420\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 1st HW:\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+Problem 5: Game Scoreboard (*args + global list + nested logic)\
+---------------------------------------------------------------\
+Define a GLOBAL leaderboard:\
+\
+    high_score_board = []     # list of (player, total) tuples\
+\
+Write `record_game(player, *scores, bonus=0, multiplier=1.0)` that:\
+  - Takes a player name (positional).\
+  - Takes ANY NUMBER of round scores using `*scores`.\
+  - Takes optional `bonus` (added to total) and `multiplier`\
+    (applied at the end).\
+  - APPENDS the result to the global leaderboard.\
+  - Returns FOUR values: `(player, rounds, total, status)`\
+\
+Rules:\
+    no scores at all          
+\f2 \uc0\u8594 
+\f1  (player, 0, 0, "no rounds played")\
+    any negative score        
+\f2 \uc0\u8594 
+\f1  (player, 0, 0, "negative score not allowed")\
+    otherwise:\
+        raw_total = sum(scores)\
+        total = int((raw_total + bonus) * multiplier)\
+        rounds = number of scores given\
+        append (player, total) to high_score_board\
+        figure out rank by sorting the board:\
+            rank 1 
+\f2 \uc0\u8594 
+\f1  status = "high score!"\
+            otherwise 
+\f2 \uc0\u8594 
+\f1  status = "rank N"\
+\
+Add a docstring documenting *args and keyword args.\
+\
+In your main code, call the function for at least 3 players and\
+print the final leaderboard.\
+\
+\
+\
+\cf4 \cb5 2ed HW :\
+\cf2 \cb3 \
+ \
+Home Work:  Bank Account\
+-----------------------\
+Create a class called `BankAccount` with two attributes:\
+    - owner  (the account holder's name)\
+    - balance\
+ \
+Add THREE methods:\
+    deposit(amount)   
+\f2 \uc0\u8594 
+\f1   add to balance, print new balance\
+    withdraw(amount)  
+\f2 \uc0\u8594 
+\f1   subtract from balance, print new balance\
+    show()            
+\f2 \uc0\u8594 
+\f1   print "<owner> has <balance> SAR"\
+ \
+Then in your main code:\
+    - Create:    a = BankAccount("Sara", 1000)\
+    - Deposit:   a.deposit(500)\
+    - Withdraw:  a.withdraw(300)\
+    - Show:      a.show()\
+}
